@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles.css";
-import { Success } from "./Success";
 
 export function Contactform({ setSuccess }) {
     const initialValues = {
