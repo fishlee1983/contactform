@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: hsl(148, 38%, 91%);
+    /*background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+
+
+}
+
+.success-container {
+
+    position: fixed;
+    color: white;
+    border: solid 1px hsl(173, 7%, 27%);
+    border-radius: 5px;
+    top: 20px;
+    left: 545px;
+    height: 70px;
+    width: 30%;
+    background-color: hsl(173, 7%, 27%);
+    z-index: 999;
+}
+
+.form-container {
+    width: 650px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    border: solid 1px white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    gap: 12px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.input-names {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input-names input {
+    width: 100%;
+}
+
+/*#email {
+    width: 100%;
+}*/
+
+label {
+    font-size: 14px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+    border: 1px solid hsl(186, 15%, 59%);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):hover,
+textarea:hover {
+    border: 2px solid hsl(169, 82%, 27%);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+textarea:focus {
+    outline: 2px solid hsl(169, 82%, 27%);
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.query {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.query-type {
+    border: 1px solid hsl(169, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.query-type label,
+.query-type input,
+.query-type:hover {
+    cursor: pointer;
+    }
+
+.query-type:hover {
+    background-color: hsl(168, 26%, 75%);
+}
+
+input[type="radio"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.heading {
+    font-size: 26px;
+    display: flex;
+    justify-content: left;
+}
+
+button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 2px solid hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(170, 40%, 20%);
+}
+
+input[type="checkbox"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+checkbox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.errorMsg {
+    color: rgb(182, 7, 7);
+    font-size: 12px;
+    
+    /*display: none;*/
+}
+
+
+input#firstName.error,
+input#lastName.error,
+input#email.error,
+textarea#message.error {
+    border: 1px solid rgb(182, 7, 7);
+}
+
+@media  screen and (max-width: 700px) {
+/*small phone */
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 700px;
+        width: 90%;
+    }
+    .form-container {
+        width: 90%;
+        height: 700px;
+        margin-left: 10%; 
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        border: solid 1px white;
+    }
+
+    
+    .input-names {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .input-names input {
+        width: 100%;
+    }
+    
+    .success-container {
+
+        position: fixed; 
+        color: rgb(250, 244, 244);
+        border: solid 1px hsl(170, 4%, 28%);
+        border-radius: 5px;
+        top: 50px;
+        left: 30px; 
+        height: 80px;
+        width: 90%;
+        background-color: hsl(173, 7%, 27%);
+        z-index: 999;
+    }
+    
+
+}
